@@ -1,5 +1,3 @@
-## Q3.3 ##
-
 create TEMPORARY TABLE if not exists table1 AS(
 	select distinct fam.id,fam.familyname,cit.cityname,sol.id,sol.firstname, fam.phone1 as phone1, fam.phone2 as phone2, sol.phone as phoneSol
 	from soldiers as sol join families as fam join city as cit join LanguageFamilies as famLan join LanguageSoldiers as solLan

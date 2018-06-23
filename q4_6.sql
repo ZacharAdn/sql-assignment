@@ -1,7 +1,7 @@
-drop procedure if exists  q46;
+drop procedure if exists  q4_6;
 DELIMITER $$
 
- create procedure q46()
+ create procedure q4_6()
  
  begin
 create TEMPORARY TABLE if not exists table1 AS(
@@ -32,4 +32,4 @@ select * from families where id not in (select id from table1 union all select f
 
 END $$
 DELIMITER ;
-call q46 ();
+call q4_6 ();

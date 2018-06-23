@@ -1,7 +1,7 @@
-drop procedure if exists  q45;
+drop procedure if exists  q4_5;
 DELIMITER $$
 
- create procedure q45()
+ create procedure q4_5()
  
  begin
 create TEMPORARY TABLE if not exists table1 AS(
@@ -30,4 +30,4 @@ select * from soldiers where personalid not in (select personalid from table1 un
 
 END $$
 DELIMITER ;
-call q45 ();
+call q4_5 ();
